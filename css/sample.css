@@ -1,0 +1,141 @@
+body{
+    margin:0;
+    padding:0;
+    text-align:left;
+    font-family: 'Kosugi Maru', sans-serif; 
+    margin-right: auto;
+    margin-left : auto;    
+}
+
+#wrapper{
+    text-align: center;
+}
+
+#contents{
+    top: 50%;
+    left: 50%;
+    margin: 50px 10px;
+}
+
+
+/*フォント*/
+#title{
+    margin: 0 auto;
+    font-weight:bold;
+    color: #0066CC;
+    text-align:center;
+    font-size: 40px;
+}
+
+/* フッターの固定 */
+div#footer-fixed {
+    position: fixed;
+    bottom: 0px;
+    background-color: #444;
+    width: 100%;
+}
+
+#footer-inbox{
+    padding: 10px 5px;
+    display: inline-block;
+}
+
+#footer-text{
+    color:#fff;
+    text-align: center;
+    padding:10px 0 20px;
+    font-size: 28px;
+}
+
+ul{
+    padding: 0;
+    display: flex;  
+    margin:0px;
+    justify-content: center;
+}
+
+li{
+    list-style-type:none;
+    width: 33.33333%;
+    border-radius: 20px;
+}
+
+li:hover{
+    background: #0066CC;
+}
+
+.janken img{
+    width: 70%;
+}
+
+
+
+/* モーダル */
+#overlay {
+    display: none;
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 9;
+    background-color: rgba(0, 0, 0, .65);
+}
+#modal {
+    display: none;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    z-index: 99;
+    transform: translate(-50%, -50%);
+    max-width: 70vw;
+    max-height: 70vh;
+    max-width: 400px;
+    padding: 10px;
+    border-radius: 8px;
+    background-color: #fff;
+    font-size: 24px;
+    text-align: center;
+}
+.active {
+    display: block !important;
+} 
+
+button{
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    padding: 0;
+    appearance: none;
+    width: 90%;
+    background-color: #0066CC;
+    color: #fff;
+    font-size: 24px;
+    padding: 10px;
+    border-radius: 20px;
+}
+
+.result_img{
+    width: 90%;
+    margin-bottom: 10px;
+} 
+
+.hands_img{
+    margin-top: 15px;
+}
+
+/* 遅延表示 */
+.late {
+    opacity: 0;
+    animation: appeare 0s ease 0.5s 1 normal forwards running;
+  }
+  
+  @keyframes appeare {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
